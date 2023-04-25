@@ -1,7 +1,6 @@
 
 
 <p align="center">
-  <img src="https://noesis.foundation/wp-content/uploads/2023/04/logo-lumi-2.png?sanitize=true#gh-light-mode-only">
   <img src="https://noesis.foundation/wp-content/uploads/2023/04/logo-lumi-light.png?sanitize=true#gh-dark-mode-only">
 </p>
 
