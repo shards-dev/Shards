@@ -26,6 +26,13 @@ Noesis helps you build web3 products that scale and feel like web2 in days, not 
 - **Easy to install, deploy, and maintain**
 -  **More coming soon, stay informed!**
 
+
+
+## 😍 Coming Soon:
+
+- **MPC Wallet APIs** Let your users login to your product without requiring a wallet. Non-custodial.
+- **WhiteLabel NFT Marketplaces** Out-of-the-box easy to modify NFT Marketplace. LFG!
+
 ## 📖 Documentation
 
 You can consult Noesis documentation at [https://docs.noesis.foundation](https://docs.noesis.foundation).
