@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="https://noesis.foundation/wp-content/uploads/2023/04/logo-lumi-light.png?sanitize=true#gh-dark-mode-only">
+  <img src="https://circa.sh/wp-content/uploads/2023/05/circa-black-logo.png">
 </p>
 
 <h4 align="center">
