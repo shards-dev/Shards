@@ -14,7 +14,7 @@
 
 <p align="center">⚡ A dead-simple, batteries included tool for deploying app-specific-rollups. 😌</p>
 
-Noesis helps you build web3 products that scale and feel like web2 in days, not months. We offer features that work out-of-the-box to speed up your workflow.
+Circa helps you build web3 products that scale and feel like web2 in days, not months. We offer features that work out-of-the-box to speed up your workflow.
 
 
 
@@ -35,14 +35,14 @@ Noesis helps you build web3 products that scale and feel like web2 in days, not 
 
 ## 📖 Documentation
 
-You can consult Noesis documentation at [https://docs.noesis.foundation](https://docs.noesis.foundation).
+You can consult Circa documentation at [https://docs.circa.sh](https://docs.circa.sh).
 
 ## 🚀 Getting started
 
-For basic instructions on how to get your Layer2 running and start building your product take a look at our [Quick Start](https://noesis.foundation/how-to-deploy-your-own-layer2-on-ethereum/) guide.
+For basic instructions on how to get your Layer2 running and start building your product take a look at our [Quick Start](https://circa.sh/how-to-deploy-your-own-layer2-on-ethereum/) guide.
 
 You may also want to check out [our API Specifications](#) 
 
-## ☁️ Noesis Managed Rollups
+## ☁️ Circa Managed Rollups
 
 Let us manage your infrastructure so you can focus on integrating a great search experience. [Reach us today](#).
