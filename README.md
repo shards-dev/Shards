@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="https://circa.sh/wp-content/uploads/2023/05/circa-black-logo.png">
+  <img src="https://shards.dev/wp-content/uploads/2023/06/shards-logo-black.png">
 </p>
 
 <h4 align="center">
