@@ -6,7 +6,7 @@
 
 <h4 align="center">
   <a href="https://bit.ly/3N5O6DR">Website</a> |
-  <a href="https://docs.noesis.foundation">Documentation</a> |
+  <a href="https://docs.shards.dev">Documentation</a> |
   <a href="https://bit.ly/3oHYhEM">Discord</a>
 </h4>
 
