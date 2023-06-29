@@ -1,0 +1,72 @@
+version: '3'
+
+services:
+  builder:
+    build: ./docker/op/builder
+    environment:
+      PRIVATE_KEY_DEPLOYER: ${PRIVATE_KEY_DEPLOYER}
+      PRIVATE_KEY_SEQUENCER: ${PRIVATE_KEY_SEQUENCER}
+      ADMIN_ADDRESS: ${ADMIN_ADDRESS}
+      SEQUENCER_ADDRESS: ${SEQUENCER_ADDRESS}
+      BATCHER_ADDRESS: ${BATCHER_ADDRESS}
+      PROPOSER_ADDRESS: ${PROPOSER_ADDRESS}
+      L1_RPC: ${L1_RPC}
+      L1_CHAIN_ID: ${L1_CHAIN_ID}
+      L1STARTINGBLOCKTAG: ${L1STARTINGBLOCKTAG}
+      L2_OUTPUT_ORACLE_TIMESTAMP: ${L2_OUTPUT_ORACLE_TIMESTAMP}
+    volumes:
+      - opstack-volume:/opstack/
+  opgeth:
+    build: ./docker/op/opgeth
+    environment:
+      SEQUENCER_ADDRESS: ${SEQUENCER_ADDRESS}
+    volumes:
+      - opstack-volume:/opstack/
+    depends_on:
+      - builder
+    restart:
+      always
+    ports:
+      - 8551:8551
+  opnode:
+    build: ./docker/op/opnode
+    environment:
+      PRIVATE_KEY_SEQUENCER: ${PRIVATE_KEY_SEQUENCER}
+      L1_RPC: ${L1_RPC}
+      RPC_KIND: ${RPC_KIND}
+    volumes:
+      - opstack-volume:/opstack/
+    depends_on:
+      - builder
+    restart: always
+    ports:
+      - 8547:8547
+  opbatcher:
+    build: ./docker/op/opbatcher
+    environment:
+      BATCHER_KEY: ${BATCHER_KEY}
+      L1_RPC: ${L1_RPC}
+    volumes:
+      - opstack-volume:/opstack/
+    depends_on:
+      - builder
+    restart: always
+    ports:
+      - 8560:8560
+  op-proposer:
+    build: ./docker/op/opproposer
+    environment:
+      PROPOSER_KEY: ${PROPOSER_KEY}
+      L1_RPC: ${L1_RPC}
+    volumes:
+      - opstack-volume:/opstack/
+    depends_on:
+      - builder
+    restart: always
+
+# ===========================================================
+volumes:
+  opstack-volume:
+
+networks:
+  shared_network:
