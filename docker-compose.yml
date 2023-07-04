@@ -1,8 +1,9 @@
-version: '3'
+version: '3.8'
 
 services:
+# ===========================================================
   builder:
-    build: ./docker/op/builder
+    build: ./services/op/builder
     environment:
       PRIVATE_KEY_DEPLOYER: ${PRIVATE_KEY_DEPLOYER}
       PRIVATE_KEY_SEQUENCER: ${PRIVATE_KEY_SEQUENCER}
@@ -17,7 +18,7 @@ services:
     volumes:
       - opstack-volume:/opstack/
   opgeth:
-    build: ./docker/op/opgeth
+    build: ./services/op/opgeth
     environment:
       SEQUENCER_ADDRESS: ${SEQUENCER_ADDRESS}
     volumes:
@@ -29,7 +30,7 @@ services:
     ports:
       - 8551:8551
   opnode:
-    build: ./docker/op/opnode
+    build: ./services/op/opnode
     environment:
       PRIVATE_KEY_SEQUENCER: ${PRIVATE_KEY_SEQUENCER}
       L1_RPC: ${L1_RPC}
@@ -42,7 +43,7 @@ services:
     ports:
       - 8547:8547
   opbatcher:
-    build: ./docker/op/opbatcher
+    build: ./services/op/opbatcher
     environment:
       BATCHER_KEY: ${BATCHER_KEY}
       L1_RPC: ${L1_RPC}
@@ -54,7 +55,7 @@ services:
     ports:
       - 8560:8560
   op-proposer:
-    build: ./docker/op/opproposer
+    build: ./services/op/opproposer
     environment:
       PROPOSER_KEY: ${PROPOSER_KEY}
       L1_RPC: ${L1_RPC}
@@ -63,6 +64,64 @@ services:
     depends_on:
       - builder
     restart: always
+
+  redis_db:
+    extends:
+      file: ./services/docker-compose-redis.yml
+      service: redis_db
+
+  db:
+    extends:
+      file: ./services/docker-compose-db.yml
+      service: db
+
+# ===========================================================
+
+  blockscout:
+    depends_on:
+      - db
+      - smart-contract-verifier
+      - redis_db
+      - opgeth
+
+    image: blockscout/blockscout-optimism:latest
+    pull_policy: always
+    restart: always
+    stop_grace_period: 5m
+    container_name: 'blockscout'
+    links:
+      - db:database
+    command: bash -c "bin/blockscout eval \"Elixir.Explorer.ReleaseTasks.create_and_migrate()\" && bin/blockscout start"
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    env_file:
+      -  ./envs/common-blockscout.env
+    environment:
+        ETHEREUM_JSONRPC_VARIANT: 'geth'
+        ETHEREUM_JSONRPC_HTTP_URL: http://opgeth:8545
+        DATABASE_URL: postgresql://postgres:@host.docker.internal:7432/blockscout?ssl=false
+        ECTO_USE_SSL: 'false'
+        SECRET_KEY_BASE: '56NtB48ear7+wMSf0IQuWDAAazhpb31qyc7GiyspBP2vh7t5zlCsF5QDv76chXeN'
+    ports:
+      - 4000:4000
+    volumes:
+      - ./logs/:/app/logs/
+
+  smart-contract-verifier:
+    extends:
+      file: ./services/docker-compose-smart-contract-verifier.yml
+      service: smart-contract-verifier
+
+  visualizer:
+    extends:
+      file: ./services/docker-compose-visualizer.yml
+      service: visualizer
+
+  sig-provider:
+    extends:
+      file: ./services/docker-compose-sig-provider.yml
+      service: sig-provider
+
 
 # ===========================================================
 volumes:
