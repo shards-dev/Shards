@@ -54,7 +54,7 @@ RUN cd /opstack-temp/ \
     && foundryup \
     && git clone https://github.com/ethereum-optimism/optimism.git \
     && cd optimism \
-    && git checkout 8cf093440295ad2c4059f6ada508705013f98eab \
+    && git checkout 982a0865d175be76bdac9bb9bbaa1e3af924e558 \
     && pnpm install \
     && make op-node op-batcher op-proposer
 

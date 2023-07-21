@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 shardsdotdev/rollup:latest
+FROM --platform=linux/amd64 shardsdotdev/rollup:dev
 
-# mount volume and copy files
-CMD sh /opstack-temp/tools/bash_scripts/build_op.sh
+# Deploy Contracts and build genesis
+CMD sh /opstack-temp/tools/bash_scripts/buildBedrock.sh
