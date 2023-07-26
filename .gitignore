@@ -1,3 +1,4 @@
 .env
 services/redis-data/
+services/blockscout-db-data/
 logs/
