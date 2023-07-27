@@ -14,35 +14,38 @@
 
 <p align="center">⚡ A dead-simple, batteries included tool for deploying app-specific-rollups. 😌</p>
 
-Circa helps you build web3 products that scale and feel like web2 in days, not months. We offer features that work out-of-the-box to speed up your workflow.
+Shards helps you build web3 products that scale and feel like web2 in days, not months. We offer features that work out-of-the-box to speed up your workflow.
 
 
+## ✨ [Vote and propose features here!](https://shards.canny.io/roadmap)
 
 ## ✨ Features
 
-- **Application Specific Rollup:** High throughput, low gas fees, built on top of Eigenlayer 🔥
-- **[NFT APIs](#):**  Relevant data about the NFTs that are deployed on your network
+- **Application Specific Rollup:** Higher throughput, lower gas fees
+- Block Explorer: Let users see what's happening
+- **Easy to install, deploy, and low maintenance**
+
+## ✨ Features Coming Soon:
+
 - **[Notification APIs](#)** Get notified anytime a wallet will receive or send assets
-- **Easy to install, deploy, and maintain**
--  **More coming soon, stay informed!**
-
-
-
-## 😍 Coming Soon:
-
-- **MPC Wallet APIs** Let your users login to your product without requiring a wallet. Non-custodial.
+- **[NFT APIs](#):**  Realtime, easy to use data about the NFTs & ERC20s that live on your network
+- **Devnet Faucets**
+- Cross-chain calls (Hyperlane integration)
+- More Data Availability Layers
+- ERC4337 Bundler
+- **MPC Wallet Integration** Let your users log into your product without requiring a wallet
 - **WhiteLabel NFT Marketplaces** Out-of-the-box easy to modify NFT Marketplace. LFG!
 
 ## 📖 Documentation
 
-You can consult Circa documentation at [https://docs.circa.sh](https://docs.circa.sh).
+You can consult Shards documentation at [https://docs.shards.dev](https://docs.shards.dev).
 
 ## 🚀 Getting started
 
-For basic instructions on how to get your Layer2 running and start building your product take a look at our [Quick Start](https://circa.sh/how-to-deploy-your-own-layer2-on-ethereum/) guide.
+For basic instructions on how to get your Appchain running and start building your product take a look at our [Quick Start](https://docs.shards.dev/quick-start/) guide.
 
 You may also want to check out [our API Specifications](#) 
 
-## ☁️ Circa Managed Rollups
+## ☁️ Managed Rollups
 
-Let us manage your infrastructure so you can focus on integrating a great search experience. [Reach us today](#).
+Let us manage your infrastructure so you can focus on shippinh a great product. [Reach us today](#).
