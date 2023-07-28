@@ -25,20 +25,20 @@ Shards helps you build web3 products that scale and feel like web2 in days, not 
 - Block Explorer: Let users see what's happening
 - **Easy to install, deploy, and low maintenance**
 
-## 🚨 Features Coming Soon:
+## 🚨 Coming Soon:
 
-- **[Notification APIs]** Get notified anytime a wallet will receive or send assets
-- **[NFT APIs](#):**  Realtime, easy to use data about the NFTs & ERC20s that live on your network
+- **Notification APIs:** Get notified anytime a wallet will receive or send assets
+- **Token APIs:**  Realtime, easy to use data about the NFTs & ERC20s that live on your network
 - **Devnet Faucets**
-- Cross-chain calls (Hyperlane integration)
-- More Data Availability Layers
 - ERC4337 Bundler
+- **Cross-chain calls** (Hyperlane integration)
+- **More Data Availability Options**
 - **MPC Wallet Integration** Let your users log into your product without requiring a wallet
 - **WhiteLabel NFT Marketplaces** Out-of-the-box easy to modify NFT Marketplace. LFG!
 
 ## 📖 Documentation
 
-You can consult Shards documentation at [https://docs.shards.dev](https://docs.shards.dev).
+You can read Shards documentation at [https://docs.shards.dev](https://docs.shards.dev).
 
 ## 🚀 Getting started
 
