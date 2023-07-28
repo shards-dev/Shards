@@ -27,7 +27,7 @@ Shards helps you build web3 products that scale and feel like web2 in days, not 
 
 ## ✨ Features Coming Soon:
 
-- **[Notification APIs](#)** Get notified anytime a wallet will receive or send assets
+- **[Notification APIs]** Get notified anytime a wallet will receive or send assets
 - **[NFT APIs](#):**  Realtime, easy to use data about the NFTs & ERC20s that live on your network
 - **Devnet Faucets**
 - Cross-chain calls (Hyperlane integration)
