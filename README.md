@@ -17,15 +17,15 @@
 Shards helps you build web3 products that scale and feel like web2 in days, not months. We offer features that work out-of-the-box to speed up your workflow.
 
 
-## ✨ [Vote and propose features here!](https://shards.canny.io/roadmap)
+## 🆕 [Vote and propose features here!](https://shards.canny.io/roadmap)
 
-## ✨ Features
+## 🔥 Features
 
 - **Application Specific Rollup:** Higher throughput, lower gas fees
 - Block Explorer: Let users see what's happening
 - **Easy to install, deploy, and low maintenance**
 
-## ✨ Features Coming Soon:
+## 🚨 Features Coming Soon:
 
 - **[Notification APIs]** Get notified anytime a wallet will receive or send assets
 - **[NFT APIs](#):**  Realtime, easy to use data about the NFTs & ERC20s that live on your network
