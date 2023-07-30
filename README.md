@@ -19,11 +19,11 @@ Shards helps you build web3 products that scale and feel like web2 in days, not 
 
 ## 🆕 [Vote and propose features here!](https://shards.canny.io/roadmap)
 
-## 🔥 Features
+## ✅ Features
 
-- **Application Specific Rollup:** Higher throughput, lower gas fees
-- Block Explorer: Let users see what's happening
-- **Easy to install, deploy, and low maintenance**
+- [x] **Application Specific Rollup:** Higher throughput, lower gas fees
+- [x] Block Explorer: Let users see what's happening
+- [x] **Easy to install, deploy, and low maintenance**
 
 ## 🚨 Coming Soon:
 
@@ -38,7 +38,7 @@ Shards helps you build web3 products that scale and feel like web2 in days, not 
 
 ## 📖 Documentation
 
-You can read Shards documentation at [https://docs.shards.dev](https://docs.shards.dev).
+For full documentation, visit [docs.shards.dev](https://docs.shards.dev).
 
 ## 🚀 Getting started
 
