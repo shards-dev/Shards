@@ -7,7 +7,7 @@
 <h4 align="center">
   <a href="https://shards.dev">Website</a> |
   <a href="https://twiter.com/shardsdotdev/">Twitter</a> |
-  <a href="https://discord.gg/W6UhuQNqgr">Discord</a> |
+  <a href="https://discord.gg/C8NEd5DuN">Discord</a> |
   <a href="https://docs.shards.dev">Documentation</a>
 </h4>
 
