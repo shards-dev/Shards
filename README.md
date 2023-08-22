@@ -56,4 +56,4 @@ Visit [docs.shards.dev](https://docs.shards.dev).
 
 ## ☁️ Managed Rollups
 
-Let us manage your infrastructure so you can focus on shippinh a great product. [Reach us today](#).
+Let us manage your infrastructure so you can focus on shippinh a great product. [Reach us today](https://form.typeform.com/to/RuoONrDM).
