@@ -28,6 +28,7 @@ git clone https://github.com/shards-dev/Shards.git && cd Shards
 cp .env.example .env
 # add your public & private key to .env file
 docker-compose up -d
+# Go to localhost:4000 and wait for your rollup's first blocks
 ```
 
 ## 📖 Full Documentation
