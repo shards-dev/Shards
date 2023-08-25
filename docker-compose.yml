@@ -43,6 +43,7 @@ services:
       always
     ports:
       - 8551:8551
+      - 8545:8545
   
   opnode:
     build: ./services/op/opnode
