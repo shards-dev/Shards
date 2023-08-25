@@ -20,6 +20,7 @@ services:
       L2_OUTPUT_ORACLE_TIMESTAMP: ${L2_OUTPUT_ORACLE_TIMESTAMP}
       DEPLOYMENT_CONTEXT: ${DEPLOYMENT_CONTEXT}
       L2_BLOCKTIME: ${L2_BLOCKTIME}
+      L2_CHAIN_ID: ${L2_CHAIN_ID}
     volumes:
       - opstack-volume:/opstack/
     logging:
