@@ -29,6 +29,7 @@ cp .env.example .env
 # add your public & private key to .env file
 docker-compose up -d
 # Go to localhost:4000 and wait for your rollup's first blocks
+# Your RPC is available on port 8545
 ```
 
 ## 📖 Full Documentation
@@ -56,4 +57,4 @@ Visit [docs.shards.dev](https://docs.shards.dev).
 
 ## ☁️ Managed Rollups
 
-Let us manage your infrastructure so you can focus on shippinh a great product. [Reach us today](https://form.typeform.com/to/RuoONrDM).
+Let us manage your infrastructure so you can focus on shipping a great product. [Reach us today](https://form.typeform.com/to/RuoONrDM).
