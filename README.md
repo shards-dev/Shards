@@ -54,7 +54,3 @@ Visit [docs.shards.dev](https://docs.shards.dev).
 - **More Data Availability Options**
 - **MPC Wallet Integration** Let your users log into your product without requiring a wallet
 - **WhiteLabel NFT Marketplaces** Out-of-the-box easy to modify NFT Marketplace. LFG!
-
-## ☁️ Managed Rollups
-
-Let us manage your infrastructure so you can focus on shipping a great product. [Reach us today](https://form.typeform.com/to/RuoONrDM).
